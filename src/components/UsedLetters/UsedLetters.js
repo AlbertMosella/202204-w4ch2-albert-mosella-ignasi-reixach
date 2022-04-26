@@ -7,7 +7,9 @@ const UsedLetters = ({ usedLetters }) => {
       <h2>Used letters</h2>
       <ul className="used-letters">
         {usedLetters.map((usedLetter) => (
-          <li className="used-letter">{usedLetter}</li>
+          <li key={usedLetter} className="used-letter">
+            {usedLetter}
+          </li>
         ))}
       </ul>
     </section>

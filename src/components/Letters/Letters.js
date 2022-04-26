@@ -6,7 +6,7 @@ const Letters = ({ alphabet, action }) => {
     <ul className="letters">
       {alphabet.map((letter) => (
         <li key={letter} className="letter" onClick={action}>
-          <a href="{letter">{letter.toUpperCase()}</a>
+          <a href="{letter}">{letter}</a>
         </li>
       ))}
     </ul>
