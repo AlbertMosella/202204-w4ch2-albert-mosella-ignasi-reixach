@@ -1,16 +1,19 @@
 import "./UsedLetters.css";
+import PropTypes from "prop-types";
 
-const UsedLetters = () => {
+const UsedLetters = ({ letters }) => {
   return (
     <section className="used-letters-container">
       <h2>Used letters</h2>
       <ul className="used-letters">
-        <li className="used-letter">H,&nbsp;</li>
-        <li className="used-letter">A,&nbsp;</li>
-        <li className="used-letter">B</li>
+        {letters.map((letter) => (
+          <li className="used-letter">{letter}</li>
+        ))}
       </ul>
     </section>
   );
 };
+
+UsedLetters.propTypes = { text: PropTypes.string.isRequired };
 
 export default UsedLetters;

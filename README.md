@@ -1,13 +1,29 @@
-# Week 4 - Challenge 2
+## App
 
-## Ahorcado
+## UsedLetters
 
-Programa mediante React el juego del ahorcado.
+- RENDERIZA un array de letras recibidas
 
-En el componente GuessLetters tienen que aparecer tantas líneas como letras tenga la palabra a acertar (que será aleatoria), y se irán sustituyendo por las letras acertadas.
+## Result
 
-En el componente UsedLetters tienen que ir apareciendo las letras que ya se han usado, sin repetirse.
+- RENDERIZA mensaje RECIBIDO "You are dead" o "You're alive"
 
-En el componente Result no aparecerá nada hasta el final de la partida. Si el usuario ha ganado, tendrá el texto "You're alive!", y si pierde tendrá el texto "You're dead!".
+## Letters
 
-Incluye Husky con los tres hooks y también el workflow Audit.
+- RENDERIZA las letras
+
+## Hangman
+
+- RENDERIZA un segmento más por cada error RECIBIDO
+
+## GuessedLetters
+
+- RENDERIZA la longitud de la palabra (-)
+- RENDERIZA la letra acertada
+- RECIBE la longitud de la palabra
+- RECIBE la letra acertada y la posición en la palabra
+
+Datos
+
+- Array de palabras
+- Array de letras
