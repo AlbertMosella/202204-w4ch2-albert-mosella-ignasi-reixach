@@ -11,15 +11,17 @@ function App() {
     return clickOnLetter.target.textContent;
   };
 
+  const usedLetter = ["A"];
+
   return (
     <>
       <div className="container">
         <div className="main-container">
-          <UsedLetters />
+          <UsedLetters usedLetters={usedLetter} />
           <Hangman />
         </div>
         <GuessLetters />
-        <Result />
+        <Result text="H" />
         <Letters alphabet={alphabet} action={handleClick} />
       </div>
     </>
