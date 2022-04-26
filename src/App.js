@@ -18,7 +18,7 @@ function App() {
       <div className="container">
         <div className="main-container">
           <UsedLetters usedLetters={usedLetter} />
-          <Hangman />
+          <Hangman numberErrors={4} />
         </div>
         <GuessLetters />
         <Result text="H" />
